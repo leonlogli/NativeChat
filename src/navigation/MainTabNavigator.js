@@ -4,7 +4,7 @@ import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import { useNavigation } from '@react-navigation/native';
 import { StyleSheet } from 'react-native';
 import ChatsScreen from '../screens/ChatsScreen';
-import NotImplementedScreen from '../screens/NotImplementedScreen';
+import InProgress from '../screens/InProgress';
 
 const Tab = createBottomTabNavigator();
 
@@ -57,17 +57,17 @@ const MainTabNavigator = () => {
     >
       <Tab.Screen
         name="Status"
-        component={NotImplementedScreen}
+        component={InProgress}
         options={{ tabBarIcon: StatusTabBarIcon }}
       />
       <Tab.Screen
         name="Calls"
-        component={NotImplementedScreen}
+        component={InProgress}
         options={{ tabBarIcon: CallTabBarIcon }}
       />
       <Tab.Screen
         name="Camera"
-        component={NotImplementedScreen}
+        component={InProgress}
         options={{ tabBarIcon: CameraTabBarIcon }}
       />
       <Tab.Screen
@@ -80,7 +80,7 @@ const MainTabNavigator = () => {
       />
       <Tab.Screen
         name="Settings"
-        component={NotImplementedScreen}
+        component={InProgress}
         options={{ tabBarIcon: SettingsTabBarIcon }}
       />
     </Tab.Navigator>
